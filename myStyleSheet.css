@@ -1,0 +1,78 @@
+:root{
+    --color-BG-100: hsl(0, 0%, 100%);
+    --color-BG-200: hsl(212, 46%, 89%);
+   
+    
+    font-size: 62.5%;
+    --font-color-100: hsl(220, 15%, 55%);
+    --font-color-900: hsl(218, 44%, 22%);
+    --Font-primary: 'Outfit', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ////////// GLOBAL */
+
+body{
+    background-color: var(--color-BG-200);
+
+    font-family: var(--Font-primary);
+    font-size: 1.5rem;
+    line-height:1.5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+/* ////////// CARD */
+
+.container{
+    background-color: var(--color-BG-100);
+    max-width: 32rem;
+
+    display: flex;
+    flex-direction: column;
+    
+    padding: 1.5rem;
+
+    border-radius: 2rem;
+}
+
+.qr-code{
+    max-width: 100%;
+
+    border-radius: 1rem;
+
+    margin-bottom: 2.5rem;
+}
+
+:is(.title, .text){
+    max-width: 25rem;
+    margin: 0 auto 2rem;
+}
+
+.title{
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--font-color-900);
+    text-align: center;
+}
+
+.text{
+    color: var(--font-color-100);
+    text-align: center;
+
+}
